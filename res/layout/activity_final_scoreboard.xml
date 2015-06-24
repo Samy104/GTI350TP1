@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <TextView
+        android:id="@+id/textViewCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_scoreboard"
+        android:textSize="50sp" />
+    
+    <!-- Current top 3 -->
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TableRow
+           android:id="@+id/tableRowTop1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:padding="5dp" >
+
+           <ImageView
+               android:id="@+id/imageViewGoldMedal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:contentDescription="@string/gold_medal"
+               android:src="@drawable/gold_medal" />
+
+           <TextView
+               android:id="@+id/textViewTop1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/tbd" />
+   		    </TableRow>
+
+   		    <TableRow
+   		        android:id="@+id/tableRowTop2"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:gravity="center"
+   		        android:padding="5dp" >
+
+   		        <ImageView
+   		            android:id="@+id/imageViewSilverMedal"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:contentDescription="@string/silver_medal"
+   		            android:src="@drawable/silver_medal" />
+
+   		        <TextView
+   		            android:id="@+id/textViewTop2"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:text="@string/tbd" />
+   		    </TableRow>
+
+   		    <TableRow
+   		        android:id="@+id/tableRowTop3"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:gravity="center"
+   		        android:padding="5dp" >
+
+   		        <ImageView
+   		            android:id="@+id/imageViewBronzeMedal"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:contentDescription="@string/bronze_medal"
+   		            android:src="@drawable/bronze_medal" />
+
+   		        <TextView
+   		            android:id="@+id/textViewTop3"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:text="@string/tbd" />
+   		    </TableRow>
+   		</TableLayout>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="@string/start_new_competition" />
+</LinearLayout>

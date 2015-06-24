@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gti350.slalom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    <instrumentation android:targetPackage="gti350.slalom" android:name="android.test.InstrumentationTestRunner"></instrumentation>
+	
+    
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+        <activity
+            android:name="gti350.slalom.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="com.tutorial.CLEARSCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="gti350.slalom.activities.ContestantListActivity"
+            android:label="@string/title_activity_contestant_list"
+            android:screenOrientation="landscape" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.slalom.activities.RunListActivity"
+            android:label="@string/title_activity_run_list"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="gti350.slalom.activities.AddContestantActivity"
+            android:label="@string/title_activity_add_contestant"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="gti350.slalom.activities.FinalScoreboardActivity"
+            android:label="@string/title_activity_final_scoreboard" >
+        </activity>
+        <activity
+            android:name="gti350.slalom.activities.SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="landscape" 
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+    </application>
+
+</manifest>

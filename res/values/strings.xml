@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slalom</string>
+    <string name="action_settings">Settings</string>
+    <string name="tbd">TBD</string>
+    <string name="current_top_3">Current Top 3</string>
+    <string name="next_2_runs">Next 2 Runs</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="stop_timer">Stop Timer</string>
+    <string name="gold_medal">Gold medal</string>
+    <string name="silver_medal">Silver medal</string>
+    <string name="bronze_medal">Bronze medal</string>
+    <string name="medals">Medals</string>
+    <string name="view_all_runs"><u>(view remaining runs)</u></string>
+    <string name="view_all_contestants"><u>(view all contestants)</u></string>
+    <string name="title_activity_contestant_list">Slalom - All Contestants</string>
+    <string name="title_activity_run_list">Slalom - All Runs Left</string>
+    <string name="title_activity_add_contestant">Slalom - Add Contestant</string>
+    <string name="title_activity_splash_screen">Slalom</string>
+    <string name="back">Back</string>
+    <string name="add_contestant">Add Contestant</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="country">Country</string>
+    <string name="all_contestants">All contestants</string>
+    <string name="remaining_runs">Remaining runs</string>
+    <string name="dnf_question">Did the current contestant finish his run?</string>
+    <string name="yes">Yes</string>
+    <string name="no_dnf">No (DNF)</string>
+    <string name="next_contestant">Next contestant</string>
+    <string name="save_result">Save Result</string>
+    <string name="missed_doors_pick">Pick how many doors the contestant missed.</string>
+    <string name="missed_doors">Missed doors</string>
+    <string name="time_before_penalties">Time before penalties</string>
+    <string name="penalty_time">Penalty time</string>
+    <string name="total_time">Total time</string>
+    <string name="current_position">Current position</string>
+    <string name="title_activity_final_scoreboard">Slalom - Final Scoreboard</string>
+	<string name="final_scoreboard">Final Scoreboard</string>
+	<string name="start_new_competition">Start new competition</string>
+	<string name="base_timer_time">0:00:000</string>
+	<string name="splash_screen">Splash screen</string>
+	<string name="clear_contestants">Clear contestants</string>
+    <string name="add_default_values">Add default values</string>
+    <string name="add_default_values_2_identical_times_gold">Add default values with 2 identical times (gold)</string>
+    <string name="add_default_values_3_identical_times">Add default values with 3 identical times</string>
+    <string name="add_default_values_2_identical_times_silver">Add default values with 2 identical times (silver)</string>
+</resources>

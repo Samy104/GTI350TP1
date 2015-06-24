@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <TextView
+        android:id="@+id/textViewCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remaining_runs"
+        android:textSize="50sp" />
+    
+    <ListView
+        android:id="@+id/genericListView"
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+    </ListView>
+    
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_gravity="left"
+        android:text="@string/back" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/clear_contestants" android:title="@string/clear_contestants"></item><item android:id="@+id/add_default_values" android:title="@string/add_default_values"></item>
+    <item android:id="@+id/add_default_values_2_identical_times_gold" android:title="@string/add_default_values_2_identical_times_gold"></item>
+    <item android:id="@+id/add_default_values_2_identical_times_silver" android:title="@string/add_default_values_2_identical_times_silver"></item><item android:id="@+id/add_default_values_3_identical_times" android:title="@string/add_default_values_3_identical_times"></item>
+</menu>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tbd"
+        android:textSize="50sp" />
+   
+    <!-- Start timer button -->
+    <LinearLayout
+        android:id="@+id/layoutChrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center">
+	    
+        
+        <TextView
+	        android:id="@+id/textViewTimer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="65sp"
+	        android:text="@string/base_timer_time" />
+	        
+	    <Button
+	        android:id="@+id/buttonChrono"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/start_timer" />
+    </LinearLayout>
+    
+    <!-- DNF question -->
+    <LinearLayout
+        android:id="@+id/layoutDnfQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+	    
+        <TextView
+	        android:id="@+id/textViewDNFQuestion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dnf_question"
+	        android:textSize="22sp" />
+        
+        <Button
+	        android:id="@+id/buttonDNFQuestionYes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/yes" />
+        
+	    <Button
+	        android:id="@+id/buttonDNFQuestionNo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/no_dnf" />
+    </LinearLayout>
+    
+    <!-- Missed doors -->
+    <LinearLayout
+        android:id="@+id/layoutMissedDoors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+	    
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/missed_doors_pick"
+	        android:textSize="22sp" />
+  
+        <EditText
+                android:id="@+id/editTextMissedDoors"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+        </EditText>
+        
+        <Button
+	        android:id="@+id/buttonMissedDoors"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/save_result" />
+    </LinearLayout>
+    
+    <!-- DQ -->
+    <LinearLayout
+        android:id="@+id/layoutDQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+	    
+        <TextView
+            android:id="@+id/textViewDQ"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp" />
+        
+        <Button
+	        android:id="@+id/buttonDQNextContestant"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/next_contestant" />
+    </LinearLayout>
+    
+    <!-- DNF -->
+    <LinearLayout
+        android:id="@+id/layoutDNF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+	    
+        <TextView
+            android:id="@+id/textViewDNF"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp" />
+        
+        <Button
+	        android:id="@+id/buttonDNFNextContestant"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/next_contestant" />
+    </LinearLayout>
+    
+    <!-- Final scoreboard -->
+    <LinearLayout
+        android:id="@+id/layoutScoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+	    
+        <TableLayout
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content">
+
+		        <TableRow
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/time_before_penalties" />
+		            
+		            <TextView
+		                android:id="@+id/textViewTimeBeforePenalties"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingLeft="70dp"
+		                android:layout_gravity="right" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/missed_doors" />
+		            
+		            <TextView
+		                android:id="@+id/textViewMissedDoors"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingLeft="70dp"
+		                android:layout_gravity="right" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/penalty_time" />
+		            
+		            <TextView
+		                android:id="@+id/textViewPenaltyTime"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingLeft="70dp"
+		                android:layout_gravity="right" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/total_time" />
+		            
+		            <TextView
+		                android:id="@+id/textViewTotalTime"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingLeft="70dp"
+		                android:layout_gravity="right" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/current_position" />
+		            
+		            <TextView
+		                android:id="@+id/textViewPosition"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingLeft="70dp"
+		                android:layout_gravity="right" />
+		        </TableRow>
+		</TableLayout>
+        
+        <Button
+	        android:id="@+id/buttonScoreboard"
+	        android:layout_width="wrap_content"
+	        android:layout_height="34dp"
+	        android:text="@string/next_contestant" />
+    </LinearLayout>
+
+    <LinearLayout
+		android:layout_width="700dp"
+	    android:layout_height="300dp"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:paddingTop="50dp">
+	    
+        <!-- Next runs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:id="@+id/textViewNextRuns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_2_runs"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textViewAllRunsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all_runs"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TableLayout
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content">
+	
+                <!-- just for margins -->
+		        <TableRow><TextView /></TableRow>
+                
+		        <TableRow
+		            android:id="@+id/tableRowNextRun1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:id="@+id/textViewNextRun1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/tbd" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:id="@+id/tableRowNextRun2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		            
+		            <TextView
+		                android:id="@+id/textViewNextRun2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/tbd" />
+		        </TableRow>
+		    </TableLayout>
+        </LinearLayout>
+        
+    	<!-- Current top 3 -->
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+           	android:layout_weight="10"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal"
+	        android:paddingLeft="40dp" >
+	         
+    	    <TextView
+    	        android:id="@+id/textViewCurrentTop3"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/current_top_3"
+    	        android:textSize="32sp" />
+
+    	    <TextView
+    	        android:id="@+id/textViewAllContestantsLink"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/view_all_contestants"
+    	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	    
+    	    <TableLayout
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content">
+	
+    	        <!-- just for margins -->
+                <TableRow><TextView /></TableRow>
+    	        
+		        <TableRow
+		            android:id="@+id/tableRowTop1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+
+		            <ImageView
+				        android:id="@+id/imageViewGoldMedal"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/gold_medal"
+				        android:contentDescription="@string/gold_medal" />
+		            
+					<TextView
+					    android:id="@+id/textViewTop1"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/tbd" />
+
+		        </TableRow>
+		        
+		        <TableRow
+		            android:id="@+id/tableRowTop2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+
+		            <ImageView
+				        android:id="@+id/imageViewSilverMedal"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/silver_medal"
+				        android:contentDescription="@string/silver_medal" />
+		            
+					<TextView
+					    android:id="@+id/textViewTop2"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/tbd" />
+
+		        </TableRow>
+		        
+		        <TableRow
+		            android:id="@+id/tableRowTop3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+
+		            <ImageView
+				        android:id="@+id/imageViewBronzeMedal"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/bronze_medal"
+				        android:contentDescription="@string/bronze_medal" />
+		            
+					<TextView
+					    android:id="@+id/textViewTop3"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/tbd" />
+
+		        </TableRow>
+			</TableLayout>
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/buttonAddContestant"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:gravity="right"
+        android:text="@string/add_contestant" />
+    
+</LinearLayout>
